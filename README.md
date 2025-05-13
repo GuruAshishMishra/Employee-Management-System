@@ -93,8 +93,7 @@ Configure general settings, email notifications, and display options
 Support
 For support, feature requests, or bug reports, please contact us at:
 
-Email: support@yourwebsite.com
-Website: https://yourwebsite.com/support
+Email: guruprofessional1122@gmail.com
 License
 This plugin is licensed under the GPL v2 or later.
 
