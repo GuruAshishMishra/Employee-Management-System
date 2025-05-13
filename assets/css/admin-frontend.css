@@ -1,0 +1,1122 @@
+/* Admin Frontend Styles */
+.ems-admin-dashboard-container,
+.ems-admin-employees-container,
+.ems-admin-attendance-container,
+.ems-admin-salary-container,
+.ems-registration-container {
+    background-color: var(--ems-body-bg);
+}
+
+.ems-admin-nav {
+    margin-bottom: 1.5rem;
+}
+
+.ems-card-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ems-search-box {
+    display: flex;
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.ems-search-box input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    border: 1px solid var(--ems-border-color);
+    border-radius: var(--ems-border-radius);
+}
+
+.ems-search-btn {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ems-text-muted);
+}
+
+.ems-employee-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.ems-employee-list-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.5rem;
+}
+
+.ems-employee-list-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ems-employee-list-avatar-placeholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--ems-primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.ems-action-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.ems-btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ems-stat-card {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: var(--ems-border-radius);
+    background-color: var(--ems-card-bg);
+    box-shadow: var(--ems-box-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.ems-stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.ems-stat-content {
+    flex: 1;
+}
+
+.ems-stat-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.ems-stat-label {
+    color: var(--ems-text-muted);
+    font-size: 0.875rem;
+}
+
+.ems-stat-employees .ems-stat-icon {
+    background-color: rgba(74, 108, 247, 0.1);
+    color: var(--ems-primary-color);
+}
+
+.ems-stat-present .ems-stat-icon {
+    background-color: rgba(75, 192, 192, 0.1);
+    color: #4bc0c0;
+}
+
+.ems-stat-absent .ems-stat-icon {
+    background-color: rgba(255, 99, 132, 0.1);
+    color: #ff6384;
+}
+
+.ems-stat-pending .ems-stat-icon {
+    background-color: rgba(255, 205, 86, 0.1);
+    color: #ffcd56;
+}
+
+.ems-quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.ems-quick-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--ems-light-color);
+    border-radius: var(--ems-border-radius);
+    text-decoration: none;
+    color: var(--ems-text-color);
+    transition: var(--ems-transition);
+}
+
+.ems-quick-action:hover {
+    background-color: var(--ems-primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.ems-quick-action i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ems-system-info {
+    margin-top: 0.5rem;
+}
+
+.ems-system-info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--ems-border-color);
+}
+
+.ems-system-info-item:last-child {
+    border-bottom: none;
+}
+
+.ems-system-info-label {
+    font-weight: 500;
+}
+
+.ems-btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.ems-mt-2 {
+    margin-top: 0.5rem;
+}
+
+.ems-required {
+    color: var(--ems-danger-color);
+}
+
+.ems-form-text {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--ems-text-muted);
+    font-size: 0.875rem;
+}
+
+.ems-access-denied {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--ems-light-color);
+    border-radius: var(--ems-border-radius);
+    border: 1px solid var(--ems-border-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Additional Icons */
+.ems-icon-users:before {
+    content: "\f0c0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-user-plus:before {
+    content: "\f234";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-check-circle:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-x-circle:before {
+    content: "\f057";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-clock:before {
+    content: "\f017";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-plus:before {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-edit:before {
+    content: "\f044";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-dollar-sign:before {
+    content: "\f155";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-check:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-file-text:before {
+    content: "\f15c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-settings:before {
+    content: "\f013";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-search:before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-calendar-plus:before {
+    content: "\f271";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-refresh-cw:before {
+    content: "\f2f1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+/*==================================================*/
+/* General Styles */
+:root {
+    --ems-primary-color: #4a6cf7;
+    --ems-primary-hover: #3a5ce5;
+    --ems-secondary-color: #6c757d;
+    --ems-success-color: #28a745;
+    --ems-danger-color: #dc3545;
+    --ems-warning-color: #ffc107;
+    --ems-info-color: #17a2b8;
+    --ems-light-color: #f8f9fa;
+    --ems-dark-color: #343a40;
+    --ems-body-bg: #f5f8fa;
+    --ems-card-bg: #ffffff;
+    --ems-text-color: #333333;
+    --ems-text-muted: #6c757d;
+    --ems-border-color: #e9ecef;
+    --ems-border-radius: 0.375rem;
+    --ems-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --ems-transition: all 0.2s ease-in-out;
+}
+
+.ems-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ems-text-color);
+    line-height: 1.5;
+    background-color: var(--ems-body-bg);
+    padding: 2rem;
+    border-radius: var(--ems-border-radius);
+    margin-bottom: 2rem;
+}
+
+/* Typography */
+.ems-container h1, 
+.ems-container h2, 
+.ems-container h3, 
+.ems-container h4, 
+.ems-container h5, 
+.ems-container h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.ems-container h1 {
+    font-size: 2.25rem;
+}
+
+.ems-container h2 {
+    font-size: 1.8rem;
+}
+
+.ems-container h3 {
+    font-size: 1.5rem;
+}
+
+.ems-container p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.ems-text-center {
+    text-align: center;
+}
+
+.ems-text-muted {
+    color: var(--ems-text-muted);
+}
+
+.ems-mt-3 {
+    margin-top: 1rem;
+}
+
+.ems-mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Grid System */
+.ems-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ems-col-md-4, 
+.ems-col-md-6, 
+.ems-col-md-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .ems-col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    
+    .ems-col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .ems-col-md-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+/* Card */
+.ems-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--ems-card-bg);
+    background-clip: border-box;
+    border: 1px solid var(--ems-border-color);
+    border-radius: var(--ems-border-radius);
+    box-shadow: var(--ems-box-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.ems-card-header {
+    padding: 1rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid var(--ems-border-color);
+}
+
+.ems-card-header h3 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.ems-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+/* Buttons */
+.ems-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: var(--ems-border-radius);
+    transition: var(--ems-transition);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ems-btn:hover {
+    text-decoration: none;
+}
+
+.ems-btn-primary {
+    color: #fff;
+    background-color: var(--ems-primary-color);
+    border-color: var(--ems-primary-color);
+}
+
+.ems-btn-primary:hover {
+    color: #fff;
+    background-color: var(--ems-primary-hover);
+    border-color: var(--ems-primary-hover);
+}
+
+.ems-btn-outline {
+    color: var(--ems-secondary-color);
+    background-color: transparent;
+    border-color: var(--ems-secondary-color);
+}
+
+.ems-btn-outline:hover {
+    color: #fff;
+    background-color: var(--ems-secondary-color);
+    border-color: var(--ems-secondary-color);
+}
+
+.ems-btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+/* Forms */
+.ems-form {
+    margin-bottom: 1rem;
+}
+
+.ems-form-group {
+    margin-bottom: 1rem;
+}
+
+.ems-form-group label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.ems-form input[type="text"],
+.ems-form input[type="email"],
+.ems-form input[type="password"],
+.ems-form input[type="date"],
+.ems-form input[type="number"],
+.ems-form select,
+.ems-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ems-text-color);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--ems-border-color);
+    border-radius: var(--ems-border-radius);
+    transition: var(--ems-transition);
+}
+
+.ems-form input[type="text"]:focus,
+.ems-form input[type="email"]:focus,
+.ems-form input[type="password"]:focus,
+.ems-form input[type="date"]:focus,
+.ems-form input[type="number"]:focus,
+.ems-form select:focus,
+.ems-form textarea:focus {
+    color: var(--ems-text-color);
+    background-color: #fff;
+    border-color: var(--ems-primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(74, 108, 247, 0.25);
+}
+
+.ems-form-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.ems-form-links a {
+    color: var(--ems-primary-color);
+    text-decoration: none;
+}
+
+.ems-form-links a:hover {
+    text-decoration: underline;
+}
+
+/* Alerts */
+.ems-alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: var(--ems-border-radius);
+}
+
+.ems-alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.ems-alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.ems-alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.ems-alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+/* Navigation */
+.ems-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--ems-border-color);
+}
+
+.ems-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.ems-welcome-text {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.ems-dashboard-nav {
+    margin-bottom: 1.5rem;
+}
+
+.ems-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--ems-border-color);
+}
+
+.ems-nav-item {
+    margin-bottom: -1px;
+}
+
+.ems-nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--ems-text-color);
+    border: 1px solid transparent;
+    border-top-left-radius: var(--ems-border-radius);
+    border-top-right-radius: var(--ems-border-radius);
+    transition: var(--ems-transition);
+}
+
+.ems-nav-link:hover {
+    border-color: var(--ems-border-color) var(--ems-border-color) var(--ems-border-color);
+    color: var(--ems-primary-color);
+}
+
+.ems-nav-item.active .ems-nav-link {
+    color: var(--ems-primary-color);
+    background-color: #fff;
+    border-color: var(--ems-border-color) var(--ems-border-color) #fff;
+    font-weight: 500;
+}
+
+.ems-nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* Icons */
+.ems-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+
+.ems-icon-dashboard:before {
+    content: "\f0e4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-user:before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-calendar:before {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-money:before {
+    content: "\f3d1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-download:before {
+    content: "\f019";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.ems-icon-logout:before {
+    content: "\f2f5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* Tables */
+.ems-table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ems-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--ems-text-color);
+    border-collapse: collapse;
+}
+
+.ems-table th,
+.ems-table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid var(--ems-border-color);
+}
+
+.ems-table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid var(--ems-border-color);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.ems-table tbody + tbody {
+    border-top: 2px solid var(--ems-border-color);
+}
+
+/* Badges */
+.ems-badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.ems-badge-success {
+    color: #fff;
+    background-color: var(--ems-success-color);
+}
+
+.ems-badge-warning {
+    color: #212529;
+    background-color: var(--ems-warning-color);
+}
+
+.ems-badge-danger {
+    color: #fff;
+    background-color: var(--ems-danger-color);
+}
+
+.ems-badge-info {
+    color: #fff;
+    background-color: var(--ems-info-color);
+}
+
+.ems-badge-present {
+    color: #fff;
+    background-color: var(--ems-success-color);
+}
+
+.ems-badge-absent {
+    color: #fff;
+    background-color: var(--ems-danger-color);
+}
+
+.ems-badge-half_day {
+    color: #212529;
+    background-color: var(--ems-warning-color);
+}
+
+.ems-badge-leave {
+    color: #fff;
+    background-color: var(--ems-info-color);
+}
+
+/* Login Page */
+.ems-login-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ems-login-required {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--ems-light-color);
+    border-radius: var(--ems-border-radius);
+    border: 1px solid var(--ems-border-color);
+}
+
+/* Dashboard */
+.ems-employee-info {
+    display: flex;
+    align-items: center;
+}
+
+.ems-employee-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.ems-employee-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ems-employee-avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--ems-primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.ems-employee-details h4 {
+    margin-bottom: 0.25rem;
+}
+
+.ems-employee-position {
+    color: var(--ems-primary-color);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.ems-employee-company {
+    color: var(--ems-text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.ems-employee-joined {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.ems-attendance-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.ems-attendance-stat {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.ems-attendance-stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--ems-primary-color);
+}
+
+.ems-attendance-stat-label {
+    font-size: 0.875rem;
+    color: var(--ems-text-muted);
+}
+
+.ems-salary-info {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ems-salary-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--ems-primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.ems-salary-status {
+    margin-bottom: 1rem;
+}
+
+.ems-salary-details {
+    margin-bottom: 1rem;
+}
+
+.ems-salary-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--ems-border-color);
+}
+
+.ems-salary-detail:last-child {
+    border-bottom: none;
+}
+
+.ems-salary-detail-label {
+    font-weight: 500;
+}
+
+.ems-quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.ems-quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--ems-light-color);
+    border-radius: var(--ems-border-radius);
+    text-decoration: none;
+    color: var(--ems-text-color);
+    transition: var(--ems-transition);
+}
+
+.ems-quick-link:hover {
+    background-color: var(--ems-primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.ems-quick-link i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Profile Page */
+.ems-profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+}
+
+.ems-profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ems-profile-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--ems-primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.ems-profile-name {
+    margin-bottom: 0.25rem;
+}
+
+.ems-profile-position {
+    color: var(--ems-primary-color);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.ems-profile-company {
+    color: var(--ems-text-muted);
+    margin-bottom: 0;
+}
+
+.ems-profile-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--ems-border-color);
+}
+
+.ems-profile-detail:last-child {
+    border-bottom: none;
+}
+
+.ems-profile-detail-label {
+    font-weight: 500;
+}
+
+/* Attendance Page */
+.ems-attendance-chart-container {
+    height: 300px;
+    margin-top: 1.5rem;
+}
+
+/* Salary Page */
+.ems-salary-chart-container {
+    height: 300px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ems-salary-info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--ems-border-color);
+}
+
+.ems-salary-info-item:last-child {
+    border-bottom: none;
+}
+
+.ems-salary-info-label {
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .ems-container {
+        padding: 1rem;
+    }
+    
+    .ems-page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ems-user-info {
+        margin-top: 1rem;
+    }
+    
+    .ems-nav {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .ems-nav-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .ems-nav-item.active .ems-nav-link {
+        border-bottom-color: var(--ems-border-color);
+    }
+    
+    .ems-nav-link {
+        border: 1px solid var(--ems-border-color);
+        border-radius: var(--ems-border-radius);
+    }
+    
+    .ems-attendance-summary {
+        flex-wrap: wrap;
+    }
+    
+    .ems-attendance-stat {
+        flex: 0 0 50%;
+        margin-bottom: 1rem;
+    }
+    
+    .ems-quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*==================================================*/
+/* Responsive Adjustments for Admin Frontend */
+@media (max-width: 767.98px) {
+    .ems-stat-card {
+        padding: 1rem;
+    }
+    
+    .ems-stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    .ems-stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .ems-quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ems-card-header-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ems-card-header-actions .ems-btn {
+        margin-top: 0.5rem;
+    }
+}
